@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>encriptador</title>
+</head>
+<body>
+    
+    <main>
+
+        <div class="conteiner">
+
+
+    <!--CONTENEDOR IZQUIERDA-->
+        
+            <div class="conteiner___izquierda">
+
+
+                             <!--ARRIBA-->
+
+                <div class="izquierda__logo-contenedor izquierda__boxs">
+                
+                    <img class="izquierda__logo" src="logo.svg" alt="">
+                    
+                </div>
+
+                             <!--MEDIO-->
+
+                <div class="izquierda__input-cont izquierda__boxs">
+                       <input class="input-cont__input" id="inputTxt" type="text" placeholder="Ingrese texto aqui">
+                </div>
+                
+
+                             <!--ABAJO-->
+
+                <div class="izquierda__bts izquierda__boxs">
+
+                    <div class="izquierda__bts__advertencia">
+                        <img class="advertencia-img" src="advertencia.svg" >
+                        <p class="advertencia-p">Solo letras minusculas y sin acentos</p>
+                    </div>
+
+                  
+                    <div class="izquierda__bts__bt">
+
+                        <button class="botones-footer bt__encriptar" onclick="encriptar()">Encriptar</button>
+                        <button class="botones-footer bt__desencriptar" onclick="desencriptor()">Desencriptar</button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+    <!--CONTENEDOR DERECHA -->
+            <div class="conteiner__derecha">
+
+
+                <div class="derecha-main">
+                       
+                    <!--IMG-->
+                    <div class="derecha-main__img-conteiner">
+                          <img class="img-conteiner__img" id="img" src="Muñeco.png" alt="">
+                    </div>
+
+                    <!--MSJ H2-->
+                    <div class="derecha-main__msj">
+
+                        <h2 class="msj__h2" id="mensajeNoTxt">Ningun msj fue encontrado</h2>
+
+                        <textarea class="msj__input-txt" name="" id="retornaTxt" cols="30" rows="10">Ingrese el texto que desea encriptar o  desencriptar.</textarea>
+                   
+                    </div>
+
+                    <!--COPIAR-->
+                    <!--esto se tiene que activar cuando se empieza a escribir-->
+
+                    <div class="derecha-main__copy">
+
+                        <button class="copy__btn" id="copiar" onclick="copiar()">copiar</button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <script src="main-2.js"></script>
+</body>
+</html>
